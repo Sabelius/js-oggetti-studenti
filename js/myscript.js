@@ -31,8 +31,10 @@ let arrStudents = [
 
 ];
 
-for(let keys in arrStudents){
-  console.log(arrStudents[keys]);
+for(i = 0; i < arrStudents.length; i++){
+  for(let keys in arrStudents[i]){
+    console.log(arrStudents[i][keys]);
+  }
 }
 
 
