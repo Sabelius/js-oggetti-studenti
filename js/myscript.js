@@ -57,7 +57,12 @@ const newPerson = {
   }
 };
 
-console.log(newPerson.fullName());
-console.log(newPerson.age);
+if( !isNaN(newPerson.firstName)  || !isNaN(newPerson.lastName) || isNaN(newPerson.age)){
+  console.log("Inserisci identificativo/i corretto/i!!!");
+}else{
+  console.log(newPerson.fullName());
+  console.log(newPerson.age);
+}
+
 
 
